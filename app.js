@@ -1,5 +1,4 @@
 function handleEditProfile() {
-   // new Datepicker('#birthday');
    var name = document.getElementById("name").textContent
    var iptName = document.getElementById("ipt-name")
    iptName.value = name
@@ -23,11 +22,11 @@ function handleUpdateProfile() {
 
    var newEmail = document.getElementById("ipt-email").value
    var email = document.getElementById("email")
-   if (validator.isEmail(newEmail)) {
-      email.textContent = newEmail
-   } else {
-      alert("wrong email format")
-   }
+   if (!validator.isEmail(newEmail)) {
+      alert("Please enter a valid email format")
+      return
+   } 
+   email.textContent = newEmail
 
    var newInterests = document.getElementById("ipt-interests").value
    var interests = document.getElementById("interests")
