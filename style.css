@@ -1,0 +1,45 @@
+#profile-img {
+   width: 330px;
+   height: 270px;
+   display: block;
+   margin-bottom: 40px;
+}
+
+#display-view {
+   width: 80%;
+   margin: 40px auto;
+}
+
+hr {
+   width: 400px;
+   margin: 25px 0;
+}
+
+button {
+   width: 160px;
+   height: 45px;
+   color: black;
+   font-size: 15px;
+   border-radius: 5px;
+}
+button:hover {
+   color: white;
+   transition: 0.5s;
+   cursor: pointer;
+   border: none;
+   background: linear-gradient(135deg, red, blue);
+}
+
+#edit-view {
+   width: 80%;
+   margin: 40px auto;
+   display: none;
+}
+
+input {
+   width: 200px;
+   font-size: 15px;
+   padding: 10px;
+   border:  1px solid black;
+   border-radius: 6px;
+}
