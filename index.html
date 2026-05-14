@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-   <!-- node_modules/validator/validator.min.js -->
    <head>
       <title>Teamable</title>
       <link rel="stylesheet" href="style.css">
-      <script src="app.js"></script>
       <meta charset="utf-8" />
-      <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
-      <!-- <link rel="stylesheet" href="node_modules/Datepicker.js/dist/css/datepicker.material.css">
-      <script src="node_modules/Datepicker.js/dist/datepicker.js"></script> -->
    </head>
 
    <body>
       <div id="display-view">
          <h1>User profile</h1>
-         <img id="profile-img" src="../images/ball.jpeg">
+         <img class="profile-img" src="ball.jpeg">
 
          <span>Name: </span>
          <b id="name">Aremu Fatiu</b>
@@ -33,7 +28,7 @@
 
       <div id="edit-view">
          <h1>User profile</h1>
-         <img id="profile-img" src="../images/ball.jpeg">
+         <img class="profile-img" src="ball.jpeg">
 
          <span>Name: </span>
          <input id="ipt-name" type="text" placeholder="Aremu Fatiu"/>
@@ -46,12 +41,11 @@
          <span>Interests: </span>
          <input id="ipt-interests" type="text" placeholder="coding"/>
          <hr />
-
-         <!-- <span>Birthday date: </span>
-         <input type="text" id="birthday">
-         <hr /> -->
-
-         <button class="update-btn" onclick="handleUpdateProfile()">Update Profile</button>
+         
+         <button onclick="handleUpdateProfile()">Update Profile</button>
       </div> 
+      
+      <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+      <script src="app.js"></script>
    </body>
 </html>
